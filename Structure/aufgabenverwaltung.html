@@ -6,31 +6,58 @@
     <meta name="author" content="Roman Bucnev">
 
     <title>Aufgabenverwaltung</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="../Design/aufgabenverwaltung.css">
+
+
 </head>
 <body>
+
     <div class="favouriten">
             <div class="row">
                 <div class="col-md-3">
-                    <ul>
-                        <li> Punkt 1</li>
-                        <li> Punkt 2</li>
-                        <li> Punkt 3</li>
-                        <li> Punkt 4</li>
-                        <li> Projekt hinzufügen</li>
-
+                    <ul id="list" class="projects">
+                        <li> Projekt 1</li>
+                        <li> Projekt 2</li>
+                        <li> Projekt 3</li>
+                        <li> Projekt 4</li>
                     </ul>
                 </div>
             </div>
 
+
             <div class="row">
                 <div class="col-md-3">
-                    <input type="text" class="form-control" placeholder="Text input">
+                    <li class="add"  onclick="add()"> Projekt hinzufügen</li>
+
+                  <!--      <input type=button value="Projekt hinzufügen" onclick="add();">
+
+                    <input type="text" class="form-control" placeholder="Text input"> -->
                 </div>
             </div>
     </div>
 
+
+
+
+
+    <script src="aufgabenverwaltung.js" type="text/javascript"></script>
+
+    <script>
+
+        function add(){
+            var ul = document.getElementById("list");
+            var li = document.createElement("li");
+            var children = ul.children.length + 1
+            li.setAttribute("id", "5"+children)
+            li.appendChild(document.createTextNode("Projekt "+children));
+            ul.appendChild(li)
+
+        }
+
+
+    </script>
 </body>
 </html>

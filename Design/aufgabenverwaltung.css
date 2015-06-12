@@ -1,3 +1,11 @@
 .favouriten {
     margin: 20px;
 }
+
+.add {
+    color: red;
+}
+
+.projects {
+    color: green;
+}
