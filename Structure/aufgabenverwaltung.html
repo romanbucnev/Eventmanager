@@ -15,10 +15,10 @@
 </head>
 <body>
 
-    <div class="favouriten">
+    <div class="projects">
             <div class="row">
                 <div class="col-md-3">
-                    <ul id="list" class="projects">
+                    <ul id="projects-list" class="projects-item">
                         <li> Projekt 1</li>
                         <li> Projekt 2</li>
                         <li> Projekt 3</li>
@@ -26,7 +26,6 @@
                     </ul>
                 </div>
             </div>
-
 
             <div class="row">
                 <div class="col-md-3">
@@ -39,6 +38,19 @@
             </div>
     </div>
 
+    <div class="tasks">
+        <div class="row">
+            <div class="col-md-3">
+                <ul id="tasks-list" class="tasks-item">
+                    <li> task 1</li>
+                    <li> task 2</li>
+                    <li> task 3</li>
+                    <li> task 4</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -48,7 +60,7 @@
     <script>
 
         function add(){
-            var ul = document.getElementById("list");
+            var ul = document.getElementById("projects-list");
             var li = document.createElement("li");
             var children = ul.children.length + 1
             li.setAttribute("id", "5"+children)

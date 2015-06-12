@@ -1,11 +1,19 @@
-.favouriten {
+.projects {
     margin: 20px;
+    background-color: blue;
 }
+
 
 .add {
     color: red;
 }
 
-.projects {
+.projects-item {
     color: green;
+    background-color: #ffff00;
+}
+
+.tasks{
+    color: #ec971f;
+    background-color: darkorchid;
 }
